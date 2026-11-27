@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" data-type="software">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#102b40" />
+    <meta name="application-name" content="Skaterway" />
+    <meta
+      name="description"
+      content="Check the Canadian meet calendar, find results and replays for Alberta-related meets, or compare two skaters."
+    />
+    <meta name="page-type" content="software" />
+    <meta name="site-kind" content="software" />
+    <meta property="og:title" content="Skaterway: Speed Skating Result &amp; Race Replays" />
+    <meta
+      property="og:description"
+      content="Check the Canadian meet calendar, find results and replays for Alberta-related meets, or compare two skaters."
+    />
+    <title>Skaterway: Speed Skating Result &amp; Race Replays</title>
+    <link rel="icon" href="./oval.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a href="#content" id="skip" class="skip">Skip to content</a>
+    <header>
+      <div class="shell mast">
+        <a class="brand" href="#/" aria-label="Skaterway"><img src="./oval.svg" width="36" height="36" alt="" /><span class="brand-copy">Skaterway<small>Speed Skating Result &amp; Race Replays</small></span></a>
+        <nav id="nav" aria-label="Main navigation"></nav>
+        <div class="mast-tools">
+          <select id="language" class="lang" aria-label="Language">
+            <option value="en" lang="en">English</option>
+            <option value="fr" lang="fr">Français</option>
+            <option value="zh" lang="zh">中文</option>
+          </select>
+          <button id="site-info" type="button" aria-label="Information" disabled>
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="preview-notice">
+      <p class="shell" id="preview-notice">Beta · Results from meets with ties to Alberta. More regions to come.</p>
+    </div>
+    <main id="content" tabindex="-1" class="shell" aria-busy="true">
+      <p class="panel">Loading results…</p>
+    </main>
+    <footer class="shell">
+      <a class="foot-brand" href="#/">Skaterway<span class="brand-descriptor">: Speed Skating Result &amp; Race Replays</span></a
+      ><span id="updated"></span>
+      <p id="source-note">Profiles use public meet records. We never collect contact details or other private information for them. For reference only. Official results take precedence.</p>
+    </footer>
+  </body>
+</html>
