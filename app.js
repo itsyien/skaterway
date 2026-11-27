@@ -310,9 +310,9 @@ function header(section) {
       : "—";
   };
   document.querySelector("#source-note").textContent = txt(
-    "Profiles use public meet records. We never collect contact details or other private information for them. For reference only. Official results take precedence.",
-    "档案来自公开赛事记录。建档时不收集运动员的联系方式或其他非公开个人信息。档案仅供参考，成绩以主办方正式发布为准。",
-    "Les profils reprennent les résultats publics des compétitions. Nous ne recueillons ni coordonnées ni renseignements privés pour ces profils. Les résultats officiels font foi.",
+    "Profiles use public meet records. We never collect contact details or other private information for them. For reference only. Official results take precedence. Cloudflare counts visits to the public site.",
+    "档案来自公开赛事记录。建档时不收集运动员的联系方式或其他非公开个人信息。档案仅供参考，成绩以主办方正式发布为准。公开站点的访问量由 Cloudflare 统计。",
+    "Les profils reprennent les résultats publics des compétitions. Nous ne recueillons ni coordonnées ni renseignements privés pour ces profils. Les résultats officiels font foi. Cloudflare mesure les visites du site public.",
   );
   document.querySelector("#updated").textContent = [
     section !== "prepare" && index?.checked

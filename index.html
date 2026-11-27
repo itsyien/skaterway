@@ -50,7 +50,16 @@
     <footer class="shell">
       <a class="foot-brand" href="#/">Skaterway<span class="brand-descriptor">: Speed Skating Result &amp; Race Replays</span></a
       ><span id="updated"></span>
-      <p id="source-note">Profiles use public meet records. We never collect contact details or other private information for them. For reference only. Official results take precedence.</p>
+      <p id="source-note">Profiles use public meet records. We never collect contact details or other private information for them. For reference only. Official results take precedence. Cloudflare counts visits to the public site.</p>
     </footer>
+    <script>
+      if (location.origin === "https://skaterway.ca") {
+        const beacon = document.createElement("script");
+        beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+        beacon.defer = true;
+        beacon.dataset.cfBeacon = '{"token":"afe4184fc0e54530952ad7b2081f8ad2","spa":false}';
+        document.body.append(beacon);
+      }
+    </script>
   </body>
 </html>
